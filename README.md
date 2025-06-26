@@ -17,6 +17,4 @@ This solution defines a CustomerDataExtractor class to transform a nested .pkl d
 
 - Missing Data: Records with missing product info or 0 quantity are skipped. Fields like order_id or product_id are imputed with -1 or "Unknown" when needed.
 
-- Order-Level Calculations: Computes total_item_price and each item's share of the order as total_order_value_percentage, clipped to [0, 100].
-
 - Data Cleaning: Final DataFrame is explicitly typed, sorted by customer_id, order_id, and product_id.
